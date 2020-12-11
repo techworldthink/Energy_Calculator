@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--Custome style-->
+  <link href="library/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="table-responsive">
+    <table class="table ">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Appliance</th>
+          <th scope="col">WATTS</th>
+          <th scope="col">Total Number</th>
+          <th scope="col">Daily Usage(in Hours)</th>
+          <th scope="col">Consumption(Monthly)</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="td">1</td>
+          <td><input type="data" value=""></td>
+          <td><input type="number" value=0 id="w1" ></td>
+          <td><input type="number" value=0 id="n1" class="td"></td>
+          <td><input type="number" value=0 id="h1" class="td"></td>
+          <td><input type="number" value=0 id="c1" class="td"></td>
+        </tr>
+
+        <tr>
+          <td class="td">2</td>
+          <td><input type="data" value=""></td>
+          <td><input type="number" value=0 id="w2" class="td"></td>
+          <td><input type="number" value=0 id="n2" class="td"></td>
+          <td><input type="number" value=0 id="h2" class="td"></td>
+          <td><input type="number" value=0 id="c2" class="td"></td>
+        </tr>
+
+       
+        
+          <td colspan="5"><input type="submit" onclick="find()"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="library/js/js.js"></script>
+</body>
+
+</html>

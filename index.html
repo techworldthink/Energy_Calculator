@@ -11,69 +11,53 @@
 </head>
 
 <body>
-  <div class="table-responsive">
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th scope="col">No</th>
-          <th scope="col">Appliance</th>
-          <th scope="col">WATTS</th>
-          <th scope="col">Total Number</th>
-          <th scope="col">Daily Usage(in Hours)</th>
-          <th scope="col">Consumption(Monthly)</th>
-        </tr>
-      </thead>
-      <tbody>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">APPLIENCE</th>
+        <th scope="col">WATTS</th>
+        <th scope="col">COUNT</th>
+        <th scope="col">USAGE</th>
+        <th scope="col">CONS</th>
+      </tr>
+    </thead>
+    <tbody>
 
-        <tr>
-          <td>1</td>
-          <td>
-            <select class="select" onchange="watts(0)">
-              <option> </option>
-              <option> </option>
-              <option> </option>
-            </select>
-          </td>
-          <td>
-            <select class="watts">
-              <option> </option>
-              <option> </option>
-              <option> </option>
-            </select>
-          </td>
-          <td><input type="number" value=0 id="b1"></td>
-          <td><input type="number" value=0 id="b2"></td>
-          <td><input type="number" value=0 id="b3"></td>
-        </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w1" class="td"></td>
+        <td><input type="number" value=0 id="n1" class="td"></td>
+        <td><input type="number" value=0 id="h1" class="td"></td>
+        <td><input type="number" value=0 id="c1" class="td"></td>
+      </tr>
 
-        <tr>
-          <td>2</td>
-          <td>
-            <select class="select" onchange="watts(1)">
-              <option> </option>
-              <option> </option>
-              <option> </option>
-            </select>
-          </td>
-          <td>
-            <select class="watts">
-              <option> </option>
-              <option> </option>
-              <option> </option>
-            </select>
-          </td>
-          <td><input type="number" value=0 id="b1"></td>
-          <td><input type="number" value=0 id="b2"></td>
-          <td><input type="number" value=0 id="b3"></td>
-        </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w2" class="td"></td>
+        <td><input type="number" value=0 id="n2" class="td"></td>
+        <td><input type="number" value=0 id="h2" class="td"></td>
+        <td><input type="number" value=0 id="c2" class="td"></td>
+      </tr>
 
-       
-        
-          <td colspan="5"><input type="submit" onclick="find()"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+
+    </tbody>
+  </table>
+
+<br><br><br>
+
+  <table class="ls-tb">
+    <tr class="r4-sub">
+      <td colspan="2" class="ls-td"><input type="submit" onclick="find()"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td class="ls-td">Total Consumption :  </td>
+      <td class="ls-td"><input type="data"></td>
+    </tr>
+  </table>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

@@ -1,50 +1,22 @@
 function find() {
-  let x = document.getElementById("b1").value;
-  let y = document.getElementById("b2").value;
-  let z = eval(x * y);
-  document.getElementById("b3").value = z;
+  let w1 = document.getElementById("w1").value;
+  let n1 = document.getElementById("n1").value;
+  let h1 = document.getElementById("h1").value;
+  let c1 = eval(w1 * n1 * h1);
+  document.getElementById("c1").value = c1;
+
+  let w1 = document.getElementById("w2").value;
+  let n1 = document.getElementById("n2").value;
+  let h1 = document.getElementById("h2").value;
+  let c1 = eval(w2 * n2 * h2);
+  document.getElementById("c2").value = c2;
+
+  let total = 0;
+  let cons = 0;
+  total = c1 + c2;
+  cons = total/1000;
+  
+
 }
 
-appliance = ["Bulb","Tube Light","Fan","Room A/C","Fridge"];
-let MAX_appliance = 5;
-power = [12, 31, 23];
-let max_power=3;
-let i,j = 0;
-MAX_appliance_row = 2;
 
-function set() {
-  for (j = 0; j < MAX_appliance_row; j++) {
-    for (i = 0; i < 3; i++) {
-      //document.getElementById("b3").value
-      //document.getElementsByClassName("select").options[i].text = 12
-      //document.getElementById('select').value=1000;
-      document.getElementsByClassName("select")[j].getElementsByTagName("option")[i].text = appliance[i];
-    }
-  }
-}
-
-function watts(position) {
-    var position = position;
-    //console.log(position);
-  //var  check = document.getElementsByClassName("select")[0].getElementsByTagName("option")..text;
-  var e = document.getElementsByClassName("select")[position];
-  var check = e.options[e.selectedIndex].text;
-  //console.log(check);
-  switch(check){
-    case "Bulb":
-        one(position);
-        break;
-    default:
-        console.log("sorry")
-  }
-}
-
-function one(position){
-    //console.log(position);
-    for (i = 0; i < 3; i++) {
-        document.getElementsByClassName("watts")[position].getElementsByTagName("option")[i].text = power[i];
-      }
-}
-
-set();
-//one();
