@@ -24,13 +24,15 @@ table td {
   }
 
 .ls-tr{
-    border:2px solid black;
+   /* border:2px solid black;*/
     padding:2em;
+    
 }
 .ls-tb{
-    margin-left:2em;
-    margin-right:2em;
-    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    width:75%;
+    position:initial;
 }
 .r4-sub{
     text-align: center;
@@ -39,7 +41,8 @@ table td {
 }
 .ls-td{
     padding: 1em;
+   /* border:2px solid black;*/
 }
 #cons{
-    width:3em;
+    
 }
