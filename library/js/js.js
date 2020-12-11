@@ -15,7 +15,8 @@ function find() {
   let cons = 0;
   total = c1 + c2;
   cons = total/1000;
-console.log(cons)
+  console.log(cons);
+  document.getElementById("cons").value = cons;
 }
 
 
