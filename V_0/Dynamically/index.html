@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <row class="default-row">
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><button class="add-row" onclick="addField()">Add row</button></td>
+        </row>
+      </table>
+    
+      <script>
+          let count=0;
+          if(count==0){
+            document.getElementsByTagName("input")[0].setAttribute("id","C"+count);
+          }
+      let table = document.querySelector('table')
+      let addRowBtn = document.querySelector('.add-row')
+      let defaultRow = document.querySelector('default-row')
+      
+      function addField(){
+        let copyDefaultRow = table.rows[0].cloneNode(true)
+        table.appendChild(copyDefaultRow)
+        count=count+1;
+        let id = "C"+(count);
+        let pre="C"+count;
+
+        if(count!=0){
+          pre = "C"+(count-1)
+        }
+         
+        console.log(id)
+        document.getElementsByTagName("input")[count*2].setAttribute("id",id);
+        console.log(document.getElementById(pre).value)
+      }
+    </script>
+</body>
+</html>

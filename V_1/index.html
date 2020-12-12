@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Energy Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--Custome style-->
+  <link href="library/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <img src="library/img/bg.jpg" class="img-fluid" alt="Responsive image"><br>
+  <div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">APPLIENCE</th>
+        <th scope="col">WATTS</th>
+        <th scope="col">COUNT</th>
+        <th scope="col">USAGE</th>
+        <th scope="col">CONS</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>1</td>
+        <td><input type="data" value="" placeholder="Appliance ?" class="td"></td>
+        <td><input type="number" value=0 id="w1" class="td"></td>
+        <td><input type="number" value=0 id="n1" class="td"></td>
+        <td><input type="number" value=0 id="h1" class="td"></td>
+        <td><input type="number" value=0 id="c1" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w2" class="td"></td>
+        <td><input type="number" value=0 id="n2" class="td"></td>
+        <td><input type="number" value=0 id="h2" class="td"></td>
+        <td><input type="number" value=0 id="c2" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w3" class="td"></td>
+        <td><input type="number" value=0 id="n3" class="td"></td>
+        <td><input type="number" value=0 id="h3" class="td"></td>
+        <td><input type="number" value=0 id="c3" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w4" class="td"></td>
+        <td><input type="number" value=0 id="n4" class="td"></td>
+        <td><input type="number" value=0 id="h4" class="td"></td>
+        <td><input type="number" value=0 id="c4" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w5" class="td"></td>
+        <td><input type="number" value=0 id="n5" class="td"></td>
+        <td><input type="number" value=0 id="h5" class="td"></td>
+        <td><input type="number" value=0 id="c5" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w6" class="td"></td>
+        <td><input type="number" value=0 id="n6" class="td"></td>
+        <td><input type="number" value=0 id="h6" class="td"></td>
+        <td><input type="number" value=0 id="c6" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w7" class="td"></td>
+        <td><input type="number" value=0 id="n7" class="td"></td>
+        <td><input type="number" value=0 id="h7" class="td"></td>
+        <td><input type="number" value=0 id="c7" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w8" class="td"></td>
+        <td><input type="number" value=0 id="n8" class="td"></td>
+        <td><input type="number" value=0 id="h8" class="td"></td>
+        <td><input type="number" value=0 id="c8" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w9" class="td"></td>
+        <td><input type="number" value=0 id="n9" class="td"></td>
+        <td><input type="number" value=0 id="h9" class="td"></td>
+        <td><input type="number" value=0 id="c9" class="td"></td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td><input type="data" value="" class="td"></td>
+        <td><input type="number" value=0 id="w10" class="td"></td>
+        <td><input type="number" value=0 id="n10" class="td"></td>
+        <td><input type="number" value=0 id="h10" class="td"></td>
+        <td><input type="number" value=0 id="c10" class="td"></td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+</div>
+<br><br><br>
+
+  <table class="ls-tb">
+    <tr class="r4-sub">
+      <td colspan="2" class="ls-td"><input type="submit" onclick="find()" class="sub"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td class="ls-td" colspan="2">Consumption</td>
+    </tr>
+    <tr class="ls-tr">
+      <td class="ls-td" colspan="2"><input type="data"  id="cons"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td colspan="2" class="ls-td"><input type="reset" onclick="refreshPage()" class="reset">
+    </tr>
+  </table>
+
+  <footer>
+    <h5>WAHNI GREEN TECHNOLOGIES PVT.LTD</h5>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="library/js/js.js"></script>
+</body>
+
+</html>
