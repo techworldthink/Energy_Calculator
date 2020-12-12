@@ -76,8 +76,8 @@ function consumption(){
   for (i = 0; i <= count; i++) {
     consump = consump + parseInt(document.getElementById("c" + i).value);
   }
-  consump = consump/1000;
-  document.getElementById("cons").value = consump;
+  wh = consump/1000;
+  document.getElementById("cons").value = wh;
 }
 
 
