@@ -75,8 +75,8 @@ function consumption(){
   consump=0;
   for (i = 0; i <= count; i++) {
     consump = consump + parseInt(document.getElementById("c" + i).value);
-    consump = consump/1000;
   }
+  consump = consump/1000;
   document.getElementById("cons").value = consump;
 }
 
