@@ -52,6 +52,18 @@ function addField() {
       document.getElementById(c).value =0;
 
       document.getElementsByTagName("b")[count].innerHTML = count+1;
+
+      document
+      .getElementsByTagName("input")
+      [count * input_count + 1].value="";
+
+      document
+      .getElementsByTagName("input")
+      [count * input_count + 2].value="";
+
+      document
+      .getElementsByTagName("input")
+      [count * input_count + 0].value="";
   }
 }
 
@@ -65,6 +77,7 @@ function find() {
     n = parseInt(document.getElementById("n" + i).value);
     h = parseInt(document.getElementById("h" + i).value);
     cons = w * n * h;
+    cons=cons*30;
     document.getElementById("c" + i).value = cons;
     sum = 0;
   }
