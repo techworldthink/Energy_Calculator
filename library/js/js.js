@@ -67,4 +67,8 @@ function find() {
   document.getElementById("cons").value = cons;
 }
 
+function refreshPage(){
+  window.location.reload();
+} 
+
 

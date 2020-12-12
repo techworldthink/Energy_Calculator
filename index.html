@@ -28,7 +28,7 @@
 
       <tr>
         <td>1</td>
-        <td><input type="data" value="" class="td"></td>
+        <td><input type="data" value="" placeholder="Appliance ?" class="td"></td>
         <td><input type="number" value=0 id="w1" class="td"></td>
         <td><input type="number" value=0 id="n1" class="td"></td>
         <td><input type="number" value=0 id="h1" class="td"></td>
@@ -125,15 +125,22 @@
 
   <table class="ls-tb">
     <tr class="r4-sub">
-      <td colspan="2" class="ls-td"><input type="submit" onclick="find()"></td>
+      <td colspan="2" class="ls-td"><input type="submit" onclick="find()" class="sub"></td>
     </tr>
     <tr class="ls-tr">
-      <td class="ls-td">Consumption</td>
+      <td class="ls-td" colspan="2">Consumption</td>
     </tr>
     <tr class="ls-tr">
-      <td class="ls-td"><input type="data"  id="cons"></td>
+      <td class="ls-td" colspan="2"><input type="data"  id="cons"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td colspan="2" class="ls-td"><input type="reset" onclick="refreshPage()" class="reset">
     </tr>
   </table>
+
+  <footer>
+    <h5>WAHNI GREEN TECHNOLOGIES PVT.LTD</h5>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
