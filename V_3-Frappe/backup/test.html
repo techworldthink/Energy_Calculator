@@ -1,0 +1,36 @@
+<h1>
+hai
+</h1>
+<script>
+frappe.ready(() => {
+frappe.call({method: 'frappe.ping',callback: (r) => console.log(r)})
+});
+</script>
+
+
+
+
+       """ num="12"
+        a="vg"
+        b="vdsdg"
+        c="vsdg"
+        d="vsdg"
+        value=2
+        frappe.db.sql(INSERT INTO tabenergy (app,com,mod,watts)
+                VALUES ('{a}','{b}','{c}','{d}'))
+        
+        app=app_name.strip('][').split(',')
+        com=com_name.strip('][').split(',')
+        mod=mod_name.strip('][').split(',')"""
+
+        
+        """doc.save(
+                ignore_permissions=True,
+                ignore_version=True
+                )"""
+                
+        """for i in com:
+                app.append(i)
+        for i in mod:
+               app.append(i)"""
+

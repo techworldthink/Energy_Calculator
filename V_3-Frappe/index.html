@@ -1,0 +1,81 @@
+
+  <title>Energy Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Custome style-->
+  <link href="library/css/style.css" type="text/css" rel="stylesheet">
+
+
+
+  <img src="library/img/bg.jpg" class="img-fluid" alt="Responsive image"><br>
+  <div class="table-responsive">
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">APPLIENCE</th>
+        <th scope="col">COMPANY</th>
+        <th scope="col">MODEL</th>
+        <th scope="col">WATTS</th>
+        <th scope="col">COUNT</th>
+        <th scope="col">USAGE(Daily)</th>
+        <th scope="col">CONS(Monthly)</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="default-row">
+        <td><b>1</b></td>
+        <td><input name="app_name" type="data" value="" placeholder="Appliance ?" class="td"></td>
+        <td><input type="data" value="" placeholder="Company ?" class="td"></td>
+        <td><input type="data" value="" placeholder="Model ?" class="td"></td>
+        <td><input type="number" value=0 id="w1" class="td"></td>
+        <td><input type="number" value=0 id="n1" class="td"></td>
+        <td><input type="number" value=0 id="h1" class="td"></td>
+        <td><input type="number" value=0 id="c1" class="td"></td>
+      </tr>
+
+    </tbody>
+  </table>
+  
+</div>
+<br><br>
+<button class="add-row" onclick="addField()"><i class="fa fa-plus" style="font-size:36px;color:red"></i></button>
+<BR>
+
+  <table class="ls-tb">
+    <tr class="r4-sub">
+      <td colspan="2" class="ls-td"><input type="submit" onclick="find()" class="btn sub"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td class="ls-td" colspan="2">Consumption (KWh)</td>
+    </tr>
+    <tr class="ls-tr">
+      <td class="ls-td" colspan="2"><input type="data"  id="cons"></td>
+    </tr>
+    <tr class="ls-tr">
+      <td  class="ls-td"><input type="reset" onclick="refreshPage()" class="btn reset">
+        <td  class="ls-td"><button type="button" onClick="load()" class="btn final-sub">SUBMIT</button></td>
+    </tr>
+  </table>
+
+  <footer>
+
+    <h5>WAHNI GREEN TECHNOLOGIES PVT.LTD</h5>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<script src="library/js/js.js"></script>
+
+
+
+
+
