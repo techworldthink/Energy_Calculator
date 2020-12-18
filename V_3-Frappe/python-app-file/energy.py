@@ -5,19 +5,25 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
+import json
 
 class energy(Document):
 	pass
 
 @frappe.whitelist()
-def ping1(doctype, data={}):
-	for key in data:
+def ping1(doctype,data):
+    dic = json.loads(data)   
+    for key in dic:
         doc = frappe.get_doc({
-			'doctype': doctype,
-			'app': data[key][0],
-			'com': data[key][1],
-			'mod': data[key][2],
-			'watts': data[key][3]
-		})
-        doc.insert(ignore_permissions=True, ignore_if_duplicate=True, ignore_mandatory=True)
-	return
+                'doctype': doctype,
+                'app': dic[key][0],
+                'com': dic[key][1],
+                'mod': dic[key][2],
+                'watts': dic[key][3]
+                })
+        doc.insert(
+                ignore_permissions=True,
+                ignore_if_duplicate=True,
+                ignore_mandatory=True
+                )
+    return 1
