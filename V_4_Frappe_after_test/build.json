@@ -1,0 +1,10 @@
+{
+    	"css/energy_style.css": [
+    		"public/css/energy_style.css"
+        ],
+    	"js/energy.js": [
+    		"public/js/energy.js"
+    	]
+    }
+
+
